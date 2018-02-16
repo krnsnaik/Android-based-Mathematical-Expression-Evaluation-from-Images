@@ -1,0 +1,8 @@
+.settings
+.svn
+local.properties
+orig-build.xml
+build/
+.gradle/
+.idea/
+*.iml

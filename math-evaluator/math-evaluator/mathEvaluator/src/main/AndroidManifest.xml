@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="edu.nitk.cse.mathEvaluator"
+          android:installLocation="preferExternal" 
+          android:versionName="0.5.14" 
+          android:versionCode="33"
+          >
+
+  <supports-screens android:xlargeScreens="true"
+                    android:largeScreens="true"
+                    android:normalScreens="true"
+                    android:smallScreens="true" />
+  <uses-feature android:name="android.hardware.camera.autofocus" />
+  <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+  <uses-feature android:name="android.hardware.camera"/>
+  <uses-feature android:name="android.hardware.screen.landscape"/>
+  
+  <application android:icon="@drawable/ic_launcher"
+               android:label="MathEvaluator">
+
+    <activity android:name="edu.nitk.cse.mathEvaluator.MainActivity"
+        android:label="MathEvaluator"
+        android:screenOrientation="landscape"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:windowSoftInputMode="stateAlwaysHidden"
+        >
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+  </application>
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>
