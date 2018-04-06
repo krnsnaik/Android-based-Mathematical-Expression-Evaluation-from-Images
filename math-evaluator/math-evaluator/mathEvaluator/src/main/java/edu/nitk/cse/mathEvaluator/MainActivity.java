@@ -134,7 +134,7 @@ public class MainActivity extends Activity {
 
     private void initCharacterBlacklistAndWhitelist() {
         characterBlacklist = "";
-        characterWhitelist = "0123456789()-+x/";
+        characterWhitelist = "d0123456789()-+x*/∫";
     }
 
 
